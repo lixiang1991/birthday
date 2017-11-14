@@ -3,7 +3,7 @@
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
-
+    var interval_index=-1
     function init() {
         initStages();
 //        initForm();
@@ -11,7 +11,7 @@
         initCircles();
         animate();
 //        addListeners();
-        var text_list=['佳佳','生日快乐'];
+        var text_list=['佳佳','生日快乐','天天开心','永远年轻'];
         changeText(text_list,0);
 
     }
@@ -19,6 +19,7 @@
         if(index>=list.length){
             index=0;
         }
+        console.log(index+' '+textFormed);
         var text=list[index];
         if(textFormed) {
             explode();
@@ -32,9 +33,9 @@
         } else {
             createText(text);
         }
-        interval_index=window.setInterval(function(){
-            changeText(list,index+1);
-        },2000)
+            interval_index=setTimeout(function(){
+                changeText(list,index+1);
+            },3000)
     }
     // Init Canvas
     function initStages() {
@@ -64,7 +65,7 @@
 
     function initCircles() {
         circles = [];
-        for(var i=0; i<600; i++) {
+        for(var i=0; i<800; i++) {
             var circle = new createjs.Shape();
             var r = 7;
             var x = window.innerWidth*Math.random();
@@ -118,6 +119,7 @@
     }
 
     function formText() {
+        console.log(circles.length+'---'+textPixels.length)
         for(var i= 0, l=textPixels.length; i<l; i++) {
             circles[i].originX = offsetX + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
