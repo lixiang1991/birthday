@@ -19,7 +19,7 @@
         if(index>=list.length){
             index=0;
         }
-        console.log(index+' '+textFormed);
+//        console.log(index+' '+textFormed);
         var text=list[index];
         if(textFormed) {
             explode();
@@ -119,7 +119,7 @@
     }
 
     function formText() {
-        console.log(circles.length+'---'+textPixels.length)
+//        console.log(circles.length+'---'+textPixels.length)
         for(var i= 0, l=textPixels.length; i<l; i++) {
             circles[i].originX = offsetX + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
