@@ -144,6 +144,14 @@ puzzleGame.prototype = {
     "mousedown": function(e){
      self.cb_cellDown.fire(e, $(this), self);
      return false;
+    },
+    "touchstart": function(){
+     $(this).addClass("hover");
+     self.cb_cellDown.fire(e, $(this), self);
+     return false;
+    },
+    "mouseout": function(){
+     $(this).removeClass("hover");
     }
     
    });
