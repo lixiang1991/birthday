@@ -15,7 +15,7 @@ var puzzleGame = function(options){
  this.offY = this.e_playArea.offset().top;
  
  this.levelArr = [[3,3],[4,4],[6,6]];
- this.level = 1;
+ this.level = 0;
  this.scoreArr = [100,200,400];
  this.score = 0;
  this.playCount = 0;
@@ -248,13 +248,13 @@ puzzleGame.prototype = {
   }
  },
  success:function(){
-  alert("ok");
+
   this.score += this.scoreArr[this.level]
   this.e_playScore.html(this.score);
  }
 }
 $(document).ready(function(e) {
     var pg = new puzzleGame({
-  img: "img/jiajia.jpg"
+  img: "img/jiajia1.jpg"
  });
 });
