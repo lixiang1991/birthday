@@ -1,0 +1,31 @@
+<!doctype html><html dl><head>
+<title>TypeType</title>
+</head><body>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+	bgColor = '#000';//'#111'
+gravity = 1;
+particleColor = '#279'; //f73 fff a75
+energyLost=0.8;
+canvas = document.querySelector('canvas');
+ctx = canvas.getContext('2d');
+ctx.font = "30px Courier New";
+    //设置字体填充颜色
+    ctx.fillStyle = "blue";
+    //从坐标点(50,50)开始绘制文字
+    ctx.fillText("CodePlayer+中文测试", 50, 50);
+ (onresize = function(){
+  width = canvas.width = canvas.clientWidth;
+  height = canvas.height = canvas.clientHeight;
+  o = {x:Math.floor(width/2),y:Math.floor(height/2)};
+  edge = {top:-o.y,right:width-o.x,bottom:height-o.y,left:-o.x}
+})(); 
+  });
+</script>
+<div id="ball" >
+<canvas height="500" width="300" ></canvas>
+</div>
+</body>
+</html>
