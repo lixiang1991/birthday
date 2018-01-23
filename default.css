@@ -53,10 +53,10 @@ body {
 #code {
 	float: left;
 	width: 735px;
-	height: 400px;
+	height: 0px;
 	color: #000;
 	font-family: "Lucida Console";
-	font-size: 14px
+	font-size: 18px
 }
 #code .string {
 	color: #2a36ff
