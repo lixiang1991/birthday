@@ -13,7 +13,7 @@
   <body><audio id="au1" controls style="display:none"></audio>
   <audio id="au2" controls style="display:none"></audio>
  
-	 <div id="content" >
+	 <div id="content" style="z-index:9999">
             <div id="code">
                 <span class="comments">/**</span><br />
                 <span class="space"/><span class="comments">* To my dear Snowy,</span><br />
@@ -48,7 +48,7 @@
   $(document).ready(function() {
    document.getElementById("code").typewriter();
 	S.init();
-	S.UI.simulate('#icon heart-1|雪|宝|宝|生|日|快|乐|永|远|十|八|岁|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart|');
+	S.UI.simulate('雪|宝|宝|生|日|快|乐|永|远|十|八|岁|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart|');
 
 	// Call the function with the filename skee-lo_i-wish and autoPlay to either true or false
 	$("#au1").iWish({audioSource: "When You Say Nothing At All", autoPlay: true});

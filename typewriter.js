@@ -14,8 +14,12 @@ Element.prototype.typewriter=function(a){
 				d.innerHTML=c.substring(0, b) + (b & 1 ? "_" : "");
 				if (b >= c.length) {
 					clearInterval(e)
+					 showMsg()
 				}
 			}, 75)
 		return this
 	
+	}
+	function showMsg(){
+	alert(1);
 	}
