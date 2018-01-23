@@ -21,5 +21,15 @@ Element.prototype.typewriter=function(a){
 	
 	}
 	function showMsg(){
-	alert(1);
+	  layer.msg('你喜欢这个礼物吗？', {
+  time: 0 //不自动关闭
+  ,btn: ['喜欢', '不喜欢']
+  ,yes: function(index){
+    layer.close(index);
+    layer.msg('雅蠛蝶 O.o', {
+      icon: 6
+      ,btn: ['嗷','嗷','嗷']
+    });
+  }
+});
 	}

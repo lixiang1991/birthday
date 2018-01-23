@@ -28,12 +28,12 @@
                 <span class="comments">// Since then, I liked you silently.</span><br />
                 <span class="keyword">var</span> process=i.accompany(u);<br />
 				<span class="keyword">while</span> (process) {<br />
-                <span class="placeholder"/><span class="comments">// Try my best to cosset you.</span><br />
+                <span class="comments">// Try my best to cosset you.</span><br />
                 <span class="placeholder"/>i.cosset(u);<br />
-                <span class="placeholder"/><span class="comments">// I'm satisfied with the smile on your face.</span><br />
+                <span class="comments">// I'm satisfied with the smile on your face.</span><br />
                 <span class="placeholder"/>u.smile();<br />
 				<span class="placeholder"/><span class="keyword">if</span> (u.prepared == <span class="keyword">true</span>) {<br />
-				<span class="placeholder"/><span class="placeholder"/><span class="comments">// When you're ready,let's enter the new world.</span><br />
+				<span class="placeholder"/><span class="comments">// When you're ready,let's enter the new world.</span><br />
 				<span class="placeholder"/><span class="placeholder"/>enterNewWorld(i,u);<br />
 				<span class="placeholder"/>}<br />
                 }<br />
@@ -41,14 +41,16 @@
             </div>
         </div>
          <canvas class="canvas"></canvas>
-<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script src="shape-shifter.js"></script>
 	<script type="text/javascript" src="jquery.iwish.js"></script>
+	<script type="text/javascript" src="layer.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+	layer.msg(2);
    document.getElementById("code").typewriter();
 	S.init();
-	S.UI.simulate('雪|宝|宝|生|日|快|乐|永|远|十|八|岁|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart||#icon heart-empty|#icon heart-1|#icon heart-2|#icon heart-3|#icon heart-4|#icon heart|');
+	S.UI.simulate('雪|宝|宝|生|日|快|乐|永|远|十|八|岁|#icon heart|');
 
 	// Call the function with the filename skee-lo_i-wish and autoPlay to either true or false
 	$("#au1").iWish({audioSource: "When You Say Nothing At All", autoPlay: true});
