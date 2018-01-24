@@ -16,7 +16,7 @@
 	 <div id="content" style="z-index:9999">
             <div id="code">
                 <span class="comments">/**</span><br />
-                <span class="space"/><span class="comments">* To my dear Snowy,</span><br />
+                <span class="space"/><span class="comments">* Dear Snowy,</span><br />
                 <span class="space"/><span class="comments">* Happy birthday!</span><br />
                 <span class="space"/><span class="comments">* Happy everyday with me!</span><br />
                 Boy i = <span class="keyword">new</span> Boy(<span class="string">"lixiang"</span>);<br />
@@ -41,20 +41,14 @@
             </div>
         </div>
          <canvas class="canvas"></canvas>
+         <img id="sleep" scr="img/sleep.jpg" style="display:none"></img>
 	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script src="shape-shifter.js"></script>
 	<script type="text/javascript" src="jquery.iwish.js"></script>
 	<script type="text/javascript" src="layer.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-	layer.open({
-    content: '您确定要刷新一下本页面吗？'
-    ,btn: ['刷新', '不要']
-    ,yes: function(index){
-      location.reload();
-      layer.close(index);
-    }
-  });
+  showMsg();
    document.getElementById("code").typewriter();
 	S.init();
 	S.UI.simulate('雪|宝|宝|生|日|快|乐|永|远|十|八|岁|#icon heart|');
