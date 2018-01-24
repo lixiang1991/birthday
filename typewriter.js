@@ -14,14 +14,14 @@ Element.prototype.typewriter=function(a){
 				d.innerHTML=c.substring(0, b) + (b & 1 ? "_" : "");
 				if (b >= c.length) {
 					clearInterval(e)
-					 showMsg();
+					 startQue();
 				}
 			}, 75)
 		return this
 	
 	}
 	var dislike_count=0;
-	function showMsg(){
+	function startQue(){
 		var msgs='你喜欢这个礼物吗？';
 		if(dislike_count==1){
 			msgs='你喜欢我吗？';
@@ -116,7 +116,7 @@ Element.prototype.typewriter=function(a){
 	 }
 	 function restart(){
 	 	 dislike_count=0;
-	 	 showMsg();
+	 	 startQue();
 	 }
 	 function dislike(){
 	 	var msgs='看清楚再选呀-_-';
@@ -131,7 +131,7 @@ Element.prototype.typewriter=function(a){
 			  icon: 2,
 			  time: 1000 
 			}, function(){
-			  showMsg();
+			  startQue();
 			}); 
 	 }
 	 function nogf(){
@@ -148,7 +148,7 @@ Element.prototype.typewriter=function(a){
 			  icon: 2,
 			  time: 1000 
 			}, function(){
-			  showMsg();
+			  startQue();
 			}); 
 	 }
  	function gf(){
