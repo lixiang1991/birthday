@@ -11,7 +11,7 @@
         initCircles();
         animate();
 //        addListeners();
-        var text_list=['佳佳','生日快乐','天天开心','永远年轻'];
+        var text_list=['生日快乐','天天开心','永远年轻'];
         changeText(text_list,0);
 
     }
